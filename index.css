@@ -8,6 +8,12 @@
     height: 600px;
     background-color: cyan;
 }
+.pizda{
+    width: 100%;
+    height: 600px;
+    background-color:violet;
+    overflow: hidden;
+}
 
 .sticky-wrapper{
     width: 100%;
@@ -23,7 +29,10 @@
 
 .real-sticky{
     position: sticky;
-    top: 0;
+    top: calc(-600px + ( 100vh - 300px ) / 2); 
+    /* 600px - высота верхнего блока (violet)
+        300px - высота нашего стики блока (red)
+     */
     width: 100%;
 
 }
